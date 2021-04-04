@@ -1,0 +1,122 @@
+/* (Global) Setting the font size and line height */
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: serif;
+    height: 100vh;
+}
+
+/* (Global) Setting the font size and line height */
+h1 {
+    margin: 2%;
+    font-size: 200%;
+    font-family: serif;
+}
+
+/* (Global) Change header size to 180%, give it a 3% margin on top and bottom, and assign font family to serif */
+h2 {
+    margin: 3% 0;
+    font-size: 180%;
+    font-family: serif;
+}
+  
+/* (Global) Change header size to 150% and assign font family to serif */
+h3 {
+font-size: 150%;
+font-family: serif;
+}
+
+/* (Global) root colors */
+:root {
+    --blue: #005B8D;
+    --tan: #FFE5D9;
+    --brown: #BA7363;
+    --pink: #F4A896;
+}
+
+
+/***********Working CSS Starts Here*************/
+
+/* Header CSS Here */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 1%;
+    background-color: var(--pink);
+    color: var(--blue);
+}
+
+nav ul {
+    display:flex;
+    justify-content: space-between;
+    padding: 2%;
+    list-style-type: none ;
+}
+
+/* Main Body CSS Here */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.quiz-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: var(--tan);
+    padding: 2% 12%;
+    margin: 10%; 
+}
+
+section h2, section p, section button {
+    margin: 2%;
+    text-align: center;
+}
+
+section p {
+   
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    color: white;
+    border-radius: 3px;
+    width: 15%;
+    padding:1%;
+}
+
+
+
+
+
+
+
+
+
+
+/***************Media Queries Here******************/
+@media screen and (max-width: 1120px) {
+    .quiz-box {
+        width: 100%;
+    }
+
+    .start-button {
+        width: 50%;
+    }
+
+  }
+  
