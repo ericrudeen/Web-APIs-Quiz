@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./reset.css"/>
+    <!--<link rel="stylesheet" href="./reset.css"/> -->
     <link rel="stylesheet" href="./style.css"/>
     <title>JS and Other Fun Quiz!</title>
 </head>
@@ -13,34 +13,34 @@
         <h1>Super Fun Quiz!</h1>
         <nav>
             <ul>
-                <li><a href="./highscrores.html" class="viewHighscores">View Highscores</a></li>
-                <li><div class="time" id="time">Time:</div></li>
+                <li>View Highscores</li>
+                <li><div class="time">Time:</div></li>
             </ul>
         </nav>
     </header>
     <main class="main-content">
-        <section class="quiz-box">
+        <section class="content-box">
             <!-- Welcome Box (Quiz Not Started) -->
-            <div>
+            <div class="start-box visible">
                 <h2>Javascript Quiz!</h2>
                 <p>Trying to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds!</p>
-                <button class="button">Start Quiz!</button>
+                <button class="button start-button">Start Quiz!</button>
             </div>
             <!-- Quiz Box (Quiz Started) -->
-            <div>
-                <h2></h2>
-                <div></div>
+            <div class="quiz-box hidden">
+                <h2 class="questions"></h2>
+                <div class="answers"></div>
             </div>
-            <div>
+            <!-- Complete Box (Quiz Ended) -->
+            <div class="complete-box hidden">
                 <h2>Quiz Complete!</h2>
-                <p>Your score is</p>
+                <p id="your-score">Your score is</p>
                 <p>Enter initials below!</p>
-                <input>
-                <button>Submit</button>
-                <div></div>
+                <button class="submit-initials">Submit</button>
+                <input type="text" class="initials">
             </div>
         </section>
     </main>
-    <script src="./assets/js/script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
